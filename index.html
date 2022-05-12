@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="style.css" />
+    <header>
+        <div class="bar">
+            <img class="bar-icon" src="images/icon-menu.svg" alt="" />
+        </div>
+        <div class="left-nav">
+            <div class="logo">
+                <img src="images/logo.svg" alt="" />
+            </div>
+            <nav id="nav">
+                <img class="close-icon" id="close-icon" src="images/icon-close.svg" alt="" />
+                <ul>
+                    <li><a href="#"> Collections</a></li>
+                    <li><a href="#"> Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cart">
+            <img src="images/icon-cart.svg" id="see-cart" alt="" />
+            <img src="images/image-avatar.png" alt="" />
+        </div>
+    </header>
+</head>
+
+<body>
+    <div class="cart-view">
+        <h3>Cart</h3>
+        <p class="empty-cart">Your Cart is empty</p>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="image container">
+                <div class="bg-image">
+                    <img src="images/icon-previous.svg" alt="" class="previous" id="previous" />
+                    <img class="bg-images" src="images/image-product-1.jpg" alt="" />
+                    <img src="images/icon-next.svg" alt="" class="next" id="next" />
+                </div>
+
+                <div class="small-images">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="" class="small-image" /><img src="images/image-product-2-thumbnail.jpg" alt="" class="small-image" /><img src="images/image-product-3-thumbnail.jpg" alt="" class="small-image" /><img
+                        src="images/image-product-4-thumbnail.jpg" alt="" class="small-image" />
+                </div>
+            </div>
+        </div>
+        <div class="row left-row">
+            <div class="left-rows">
+                <div class="heading">
+                    <h5>Sneaker Company</h5>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                </div>
+                <div class="description">
+                    <p>
+                        These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                    </p>
+                </div>
+                <div class="prices">
+                    <h3 id="h3">$125.00 <span>50% </span></h3>
+                    <div class="underline-text">$250.00</div>
+                    <p></p>
+                </div>
+                <div class="cart-row">
+                    <div class="row1">
+                        <i> <img id="minus" src="images/icon-minus.svg" alt="" /></i>
+                        <p id="item-amount"></p>
+                        <i> <img src="images/icon-plus.svg" alt="" id="add" /></i>
+                    </div>
+                    <div class="row2">
+                        <button class="btn" id="btn">
+                <span><img src="images/icon-cart.svg" alt="" /></span> Add to
+                cart
+              </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container2">
+        <img src="images/icon-close.svg" alt="" class="times2" id="times2" />
+        <div class="center-all-div">
+            <div class="image-div">
+                <img src="images/icon-previous.svg" alt="" class="previous" id="prev" />
+                <img class="center-image" src="images/image-product-1.jpg" alt="" />
+                <img src="images/icon-next.svg" alt="" class="next" id="forward" />
+            </div>
+            <div class="small-images center-small-images">
+                <img data-id="1" src="images/image-product-1-thumbnail.jpg" alt="" class="smaller small-image" />
+                <img data-id="2" src="images/image-product-2-thumbnail.jpg" alt="" class="smaller small-image" />
+                <img data-id="3" src="images/image-product-3-thumbnail.jpg" alt="" class="smaller small-image" />
+
+                <img data-id="4" src="images/image-product-4-thumbnail.jpg" alt="" class="small-image" />
+            </div>
+        </div>
+    </section>
+    <div class="attribution">
+        <!-- Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>. -->
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
