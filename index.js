@@ -128,6 +128,7 @@ button.addEventListener("click", (event) => {
            </div>
             <img src="images/icon-close.svg" alt="" class="closecart" />
          </div>
+         <small class="remove">remove from cart</small>
          <button id="button" class="btn">Checkout</button>
         </div>`;
 
@@ -140,10 +141,19 @@ button.addEventListener("click", (event) => {
 cart.addEventListener("click", () => {
     cartView.classList.remove("none");
     if (cartView.classList.contains("hey")) {} else {
-        cartView.innerHTML = `<div class ="flexer"><p> Your cart is empty</p>
+        cartView.innerHTML = `<div class ="flexer2"><p> Your cart is empty</p>
       <img src="images/icon-close.svg" alt="" class="closecart" />
         </div>`;
     }
 });
-let closecart = document.querySelector(".closecart");
-console.log(closecart);
+cartView.addEventListener("click", (event) => {
+    if (event.target.classList.contains("closecart")) {
+        cartView.classList.add("none");
+    }
+    if (event.target.classList.contains("remove")) {
+        itemAmount.innerText = 0;
+        cartView.innerHTML = `<div class ="flexer2"><p> Your cart is empty</p>
+      <img src="images/icon-close.svg" alt="" class="closecart" />
+        </div>`;
+    }
+});

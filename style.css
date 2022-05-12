@@ -125,9 +125,28 @@ nav ul,
     justify-content: space-between;
 }
 
+.flexer2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexer2 p {
+    align-self: center;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
 .closecart {
     max-width: 20px;
     max-height: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.closecart:hover {
+    max-width: 23px;
+    max-height: 23px;
 }
 
 .flexer img {
