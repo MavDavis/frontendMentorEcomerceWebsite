@@ -474,6 +474,13 @@ nav ul,
     .bar .bar-icon {
         display: block;
     }
+    .bar-icon {
+        width: 50%;
+        height: 50%;
+        /* display: flex;
+        justify-self: center;
+        align-self: center; */
+    }
 }
 
 @media (max-width: 500px) {
@@ -497,15 +504,16 @@ nav ul,
     .small-image {
         display: none;
     }
+    .cart img {
+        margin-left: 5%;
+        max-width: 90%;
+        max-height: 70%;
+    }
 }
 
 @media (max-width: 375px) {
     header {
         padding: 1rem;
-    }
-    .cart #see-cart {
-        width: 25px;
-        height: 25px;
     }
 }
 
@@ -518,4 +526,12 @@ nav ul,
 .fade-in {
     opacity: 0;
     animation: fadein 0.5s ease-in 1 forwards;
+}
+
+@media (max-width: 180px) {
+    .cart img,
+    .bar-icon .bar {
+        max-width: 50%;
+        max-height: 70%;
+    }
 }
